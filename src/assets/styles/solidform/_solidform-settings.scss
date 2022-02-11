@@ -1,0 +1,50 @@
+// Fonts
+$font-family-sans-serif: 'Proxima Nova';
+$font-thin: 'proxima_nova_ltthin';
+$font-bold: 'proxima_nova_altbold';
+$font-black: 'proxima_nova_altblack';
+$font-fa: 'FontAwesome';
+
+// Weight
+$font-weight-light: 100;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+// Base sizes
+$font-base-size: 1rem !default;
+
+$font-size-8: $font-base-size * 0.5 !default;
+$font-size-9: $font-base-size * 0.5625 !default;
+$font-size-10: $font-base-size * 0.625 !default;
+$font-size-11: $font-base-size * 0.6875 !default;
+$font-size-12: $font-base-size * 0.75 !default;
+$font-size-13: $font-base-size * 0.8125 !default;
+$font-size-14: $font-base-size * 0.875 !default;
+$font-size-15: $font-base-size * 0.9375 !default;
+$font-size-18: $font-base-size * 1.125 !default;
+$font-size-20: $font-base-size * 1.25 !default;
+$font-size-24: $font-base-size * 1.5 !default;
+$font-size-30: $font-base-size * 1.875 !default;
+$font-size-40: $font-base-size * 2.5 !default;
+
+// Headings
+$headings-font-family: $font-bold;
+$headings-thin: $font-thin;
+
+// Sizing
+$size: 1rem;
+
+// Colors
+$primary: #5A4B9F;
+$secondary: #B2509C;
+$tertiary: #EE6288;
+$quaternary: #FF8C6D;
+$quinary: #FFC15D;
+$senary: #F9F871;
+$success: #3BA991;
+$info: #007BB9;
+$warning: $quinary;
+$danger: $tertiary;
+
+$dark: #12263B;
+$grey-100: #797585;

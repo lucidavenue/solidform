@@ -1,0 +1,25 @@
+@@include('assets/components/_head.html', {
+	"body-class": "page-index--center",
+	"logo-version": "light"
+})
+
+@@include('assets/components/_navbar.html', {
+	"nav-item-active": "active"
+})
+
+<div class="content-container">
+
+    @@include('assets/components/modules/_intro-center.html')
+	
+	@@include('assets/components/modules/_txt+txt.html')
+	
+	@@include('assets/components/modules/_help.html')
+	
+	@@include('assets/components/modules/_contact.html', {
+		"page-theme": ""
+	})
+	
+</div>
+<!-- /.content-container -->
+
+@@include('assets/components/_footer.html')

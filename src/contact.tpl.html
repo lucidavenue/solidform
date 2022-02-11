@@ -1,0 +1,89 @@
+@@include('assets/components/_head.html', {
+	"body-class": "page-contact"
+})
+
+@@include('assets/components/_navbar.html')
+
+<div class="content-container">
+
+    <!-- TODO -->
+
+    <section class="page page-contact page-orientation--fullpage page-theme--light">
+
+        <div class="container">
+        
+            <div class="row">
+                <div class="col-sm-6 text-left">
+                    <header class="page-header mb-3">
+                        <h3 class="header-title font--black">Contact us</h3>
+                    </header>
+					<!-- /.page-header -->
+					
+					<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum veniam totam iusto libero culpa adipisci sit. Minima delectus quasi voluptatibus.</p>
+					<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam neque dolor commodi, temporibus est rerum quaerat, doloremque nihil laudantium fuga aperiam repellendus inventore adipisci. Quasi iure nesciunt nisi cupiditate itaque!</p>
+                </div>
+                <!-- /.col-sm-6 -->
+                <div class="col-sm-6 text-left">
+                    
+                    <form action="#">
+            
+                        <div class="form-group">
+                            <label for="userInputName">Your Name</label>
+                            <input type="text" class="form-control form-control-lg" id="userInputName" aria-describedby="Name">
+                        </div>
+                        <!-- /.form-group -->
+            
+                        <div class="form-group">
+                            <label for="userInputCompany">Company Name</label>
+                            <input type="text" class="form-control form-control-lg" id="userInputCompany" aria-describedby="Company">
+                        </div>
+                        <!-- /.form-group -->
+            
+                        <div class="form-group">
+                            <label for="userInputEmail">Your Email</label>
+                            <input type="email" class="form-control form-control-lg" id="userInputEmail" aria-describedby="Email">
+                        </div>
+                        <!-- /.form-group -->
+            
+                        <div class="form-group">
+                            <label for="userInputNumber">Your Phone Number</label>
+                            <input type="text" class="form-control form-control-lg" id="userInputNumber" aria-describedby="Number">
+                        </div>
+                        <!-- /.form-group -->
+            
+                        <div class="form-group">
+                            <label for="userInputMessage">How can we help you?</label>
+                            <textarea class="form-control form-control-lg" id="userInputMessage" rows="3"></textarea>
+                        </div>
+                        <!-- /.form-group -->
+
+                        <div class="custom-control custom-checkbox">
+							<input type="checkbox" class="custom-control-input" id="customCheck1">
+							<label class="custom-control-label" for="customCheck1">I agree to SolidForm <a href="privacypolicy.html">Terms and Privacy Policy</a></label>
+						</div>
+
+						<div class="text-right mt-5">
+
+							<button type="submit" class="btn btn-lg btn-light">Submit</button>
+					
+						  </div>
+            
+                    </form>
+    
+                </div>
+                <!-- /.col-sm-6 -->
+            </div>
+            <!-- /.row -->
+        
+        </div>
+        <!-- /.container -->
+
+        <div class="page-image" data-paroller-factor="0.3"></div>
+    
+    </section>
+    <!-- /.page-contact -->
+    
+</div>
+<!-- /.content-container -->
+
+@@include('assets/components/_footer.html')

@@ -45,3 +45,17 @@ $('.page-image').paroller();
 $(".navbar-toggler").click(function() {
 	$(".navbar-fixed-top").toggleClass("navbar-open");
 });
+
+// bind scroll to anchor links
+$(document).on("click", ".scroll-to[href^='#']", function (e) {
+	var id = $(this).attr("href");
+	if ($(id).length > 0) {
+		e.preventDefault();
+		// trigger scroll
+		controller.scrollTo(id);
+		// if supported by the browser we can even update the URL.
+		if (window.history && window.history.pushState) {
+			history.pushState("", document.title, id);
+		}
+	}
+});

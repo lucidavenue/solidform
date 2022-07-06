@@ -42,10 +42,6 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-.row-reverse {
-  flex-direction: row-reverse;
-}
-
 *,
 *::before,
 *::after {
@@ -617,6 +613,25 @@ pre code {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+}
+
+.row.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.column {
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+}
+
+.column.column-reverse {
+  flex-direction: column-reverse;
+}
+
+.column div[class*="col-"] {
+  width: 100% !important;
+  max-width: 100% !important;
 }
 
 .no-gutters {
@@ -10458,16 +10473,16 @@ body.page-contact .custom-control .wpcf7-list-item .custom-control-input {
 }
 
 .page-index--center .page-image {
-  background-image: url("assets/images/pages/employers-remoteteam-640.jpg");
+  background-image: url("assets/images/pages/digital-services-640.jpg");
 }
 @media (min-width: 576px) {
   .page-index--center .page-image {
-    background-image: url("assets/images/pages/employers-remoteteam-1280.jpg");
+    background-image: url("assets/images/pages/digital-services-1280.jpg");
   }
 }
 @media (min-width: 1200px) {
   .page-index--center .page-image {
-    background-image: url("assets/images/pages/employers-remoteteam.jpg");
+    background-image: url("assets/images/pages/digital-services.jpg");
   }
 }
 
@@ -11468,8 +11483,15 @@ h6 {
 .page-gallery img {
   transition: filter 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms , opacity 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   -webkit-transform: translateZ(0);
-  filter: grayscale(1);
+  /* filter: grayscale(1); */
   opacity: 0.5;
+  max-width: 50%;
+}
+.page-gallery .row div[class*="col-"] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .page-gallery .gallery--grayscale [class*="col-"]:hover img, .page-gallery .gallery--grayscale [class*="col-"]:focus img {
   opacity: 1;
@@ -11596,12 +11618,10 @@ h6 {
 }
 .card-container .card .front {
   border: 1rem solid #dee2e6;
-  background-image: url(assets/images/test1.png);
-  background-position: -80px -30px;
-  background-size: 600px;
   transition: border-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  overflow: hidden;
 }
-.card-container .card .front.card-1 {
+/* .card-container .card .front.card-1 {
   background-image: url(assets/images/dig-ser-adv-soft-sol.png);
 }
 .card-container .card .front.card-2 {
@@ -11627,14 +11647,21 @@ h6 {
 }
 .card-container .card .front.card-9 {
   background-image: url(assets/images/dig-ser-quality.png);
-}
-.card-container .card .front .icon,
+} */
+/* .card-container .card .front .card-img, */
 .card-container .card .front h6,
 .card-container .card .front p,
 .card-container .card .front .btn {
   transform: skewX(5deg);
 }
-.card-container .card .front p {
+.card-container .card .front .card-img {
+  width: 500px;
+  /* opacity: 0.66; */
+  filter: saturate(0.5);
+  transform: skewX(5deg);
+  transition: filter 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, transform 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.card-container .card .front h6 {
   flex: 1;
 }
 .card-container .card .front .icon {
@@ -11656,6 +11683,11 @@ h6 {
   background-color: transparent;
   /* transform: rotateY(180deg); */
   border-color: #5A4B9F;
+}
+.card-container:hover .card-img, .card-container:focus .card-img {
+  filter: saturate(1) !important;
+  /* opacity: 1 !important; */
+  transform: skewX(5deg) scale(1.1) !important;
 }
 /* .card-container:hover .card .back, .card-container:focus .card .back {
   transform: rotateY(180deg) skewX(-5deg);

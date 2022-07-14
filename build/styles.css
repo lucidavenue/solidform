@@ -11934,6 +11934,41 @@ h6 {
   transition-delay: 600ms;
 }
 
+#myVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 1;
+}
+
+.btn-intro {
+  position: fixed;
+    bottom: 15vh;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 300ms ease-in;
+    opacity: 1;
+}
+
+.scrolling + .content-container .btn-intro {
+  opacity: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.page {
+  z-index: 10;
+}
+
+.page-footer,
+.page-footer--copyright {
+  position: relative;
+  z-index: 10;
+}
 
 
 /*# sourceMappingURL=styles.css.map */

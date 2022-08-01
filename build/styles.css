@@ -11946,10 +11946,10 @@ h6 {
 }
 
 .btn-intro {
-  position: fixed;
+  /* position: fixed;
     bottom: 15vh;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); */
     transition: opacity 300ms ease-in;
     opacity: 1;
 }

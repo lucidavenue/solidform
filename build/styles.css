@@ -11426,7 +11426,8 @@ h6 {
   padding-top: 3rem;
   padding-bottom: 6rem;
 }
-.page-footer address {
+.page-footer address,
+.page-footer p {
   color: #f8f9fa;
   margin-top: 1rem;
 }
@@ -11848,6 +11849,12 @@ h6 {
 
 .mt-10 {
   margin-top: 10rem;
+}
+
+@media (min-width: 992px) {
+  .mt-20 {
+    margin-top: 20rem;
+  }
 }
 
 .mb-10 {

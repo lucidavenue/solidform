@@ -4,7 +4,17 @@
 })
 
 @@include('assets/components/_navbar.html', {
-	"nav-item-active": "active"
+	"nav-item-active": "active",
+	"nav-item-1-url": "#about-us",
+	"nav-item-1-txt": "About us",
+	"nav-item-2-url": "#digital-services",
+	"nav-item-2-txt": "Digital services",
+	"nav-item-3-url": "#engineering",
+	"nav-item-3-txt": "Engineering",
+	"nav-item-4-url": "#streams",
+	"nav-item-4-txt": "Streams",
+	"nav-item-5-url": "#clients",
+	"nav-item-5-txt": "Clients"
 })
 
 <div class="content-container">
@@ -65,6 +75,13 @@
 		"card-9-excerpt": "Lorem ipsum",
 		"card-9-btn-txt": "Learn more"
 	})
+
+	@@include('assets/components/modules/_help.html', {
+		"page-section-id": "engineering",
+		"content-title": "Engineering without barriers",
+		"content-p-1": "Focus on remote work has enabled us to efficiently serve clients from across the globe. By creating an environment that is focused on flexibility and custom software development, we provide more value for the client and enable them to serve different timezones. SolidForm’s stepping out of the boundaries of traditional office organization has resulted in increased productivity and satisfaction from our clients.",
+		"content-p-2": "Businesses today require custom software solutions to remain competitive and capitalize on opportunities. In order to get the most out of your resources and deliver better overall results, you need a partner that understands your specific business requirements and can design and implement software solutions accordingly. That's what we do at SolidForm. We use the best technologies and concepts, such as cloud-native and micro services-oriented architecture, to deliver custom software solutions that help our clients achieve their goals."
+	})
 		
 	@@include('assets/components/modules/_txt+img.html', {
 		"theme": "light",
@@ -75,14 +92,7 @@
 		"content-lead": "Different companies have different types of needs when it comes to custom software development",
 		"content-p-1": "Some companies might be more tech-savvy and have a team of engineers on hand, but the current times have put a strain on resources and they need help in staffing or in fresh energy. Other companies might not be as tech-savvy and might need help in terms of both staffing and knowledge. In either case, the idea behind different service streams is to cater to the specific needs of each company. By doing so, we are able to provide the best possible service and meet the unique needs of each client.",
 		"content-p-2": "By partnering with us, your company can take advantage of our experience and expertise to create custom software solutions that are tailored to your specific needs and requirements. In addition, custom software development can also help you save time and money by reducing the need for expensive off-the-shelf software products. ",
-		"image": "pages/europe.svg"
-	})
-
-	@@include('assets/components/modules/_help.html', {
-		"page-section-id": "engineering",
-		"content-title": "Engineering without barriers",
-		"content-p-1": "Focus on remote work has enabled us to efficiently serve clients from across the globe. By creating an environment that is focused on flexibility and custom software development, we provide more value for the client and enable them to serve different timezones. SolidForm’s stepping out of the boundaries of traditional office organization has resulted in increased productivity and satisfaction from our clients.",
-		"content-p-2": "Businesses today require custom software solutions to remain competitive and capitalize on opportunities. In order to get the most out of your resources and deliver better overall results, you need a partner that understands your specific business requirements and can design and implement software solutions accordingly. That's what we do at SolidForm. We use the best technologies and concepts, such as cloud-native and micro services-oriented architecture, to deliver custom software solutions that help our clients achieve their goals."
+		"image": "pages/streams.svg"
 	})
 
 	@@include('assets/components/modules/_clients.html')

@@ -11656,7 +11656,7 @@ h6 {
   transform: skewX(5deg);
 }
 .card-container .card .front .card-img {
-  width: 500px;
+  /* width: 500px; */
   /* opacity: 0.66; */
   filter: saturate(0.5);
   transform: skewX(5deg);

@@ -15,7 +15,7 @@ var gulp = require('gulp'),
 var src = {
 	components: 'src/assets/components/**/*.html',
 	favicon: 'src/assets/images/favicon.ico',
-	images: 'src/assets/images/**/*.{gif,jpg,png,ico,mp4}',
+	images: 'src/assets/images/**/*.{gif,jpg,png,ico,mp4,webm}',
 	styles: 'src/assets/styles/',
 	fonts: 'src/assets/fonts/**/*.{eot,svg,ttf,woff}',
 	html: 'src/*.tpl.html',

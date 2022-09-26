@@ -11115,11 +11115,17 @@ h6 {
 }
 .navbar .nav-link {
   font-size: 1.3rem;
-  display: none;
+  /* display: none; */
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
 }
 @media (min-width: 992px) {
   .navbar .nav-link {
+    text-align: left;
     display: block;
+    padding-top: initial;
+    padding-bottom: initial;
   }
 }
 .navbar .dropdown-menu {

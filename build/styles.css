@@ -10711,7 +10711,7 @@ body.page-contact .custom-control .wpcf7-list-item .custom-control-input {
 }
 .page .page-header .header-title {
   line-height: 1;
-  text-shadow: 1px 1px #000;
+  /* text-shadow: 1px 1px #000; */
 }
 .page .icon {
   width: 120px;
@@ -11492,7 +11492,7 @@ h6 {
   -webkit-transform: translateZ(0);
   /* filter: grayscale(1); */
   opacity: 0.5;
-  max-width: 50%;
+  max-width: 70%;
 }
 .page-gallery .row div[class*="col-"] {
   display: flex;
@@ -11593,7 +11593,7 @@ h6 {
     width: 100%;
     height: 100%;
     margin-bottom: 0;
-    min-width: 380px;
+    min-width: 360px;
     /* perspective: 950px; */
   }
 }
@@ -11982,6 +11982,3 @@ h6 {
   position: relative;
   z-index: 10;
 }
-
-
-/*# sourceMappingURL=styles.css.map */

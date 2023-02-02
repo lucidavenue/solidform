@@ -45,6 +45,10 @@ $('.page-image').paroller();
 $(".navbar-toggler").click(function() {
 	$(".navbar-fixed-top").toggleClass("navbar-open");
 });
+$(".nav-link").click(function() {
+	$(".navbar-fixed-top").removeClass("navbar-open");
+	$(".navbar-collapse").removeClass("show");
+});
 
 
 
